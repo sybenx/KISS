@@ -62,7 +62,7 @@ public class MainActivityTest extends AbstractMainActivityTest {
     public void testSearchResultAppears() {
         onView(withId(R.id.searchEditText)).perform(typeText("blahblah"));
         onView(withId(R.id.item_search_icon)).check(matches(isDisplayed()));
-        onView(withId(R.id.item_search_text)).check(matches(withText("Search Google for “blahblah”")));
+        onView(withId(R.id.item_search_text)).check(matches(withText("Search for “blahblah”")));
     }
 
     @Test
